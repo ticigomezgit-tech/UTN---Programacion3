@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+<form id="Formulario">
+    Formulario
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="Nombre Completo"> Nombre Completo:</label><br>
+        <input type="text" id="Nombre Completo" name="Nombre Completo"
+        placeholder="Ej: Ticiano Gomez" required><br><br>
+
+        <label for="email">Correo Electronico</label><br>
+        <input type="email" name="email" id="email"
+        placeholder="Ej: correo@ejemplo.com" required><br><br>
+        
+        <label for="contraseña">Contraseña</label><br>
+        <input type="password" name="Contraseña" id="Contraseña"
+        placeholder="Mínimo 8 caracteres" required><br><br>
+
+        <p>Genero</p>
+        <input type="radio" name="genero" id="masculino" value="Masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" name="genero" id="femenino" value="Femenino">
+        <label for="femenino">Femenino</label>
+
+        <input type="radio" name="genero" id="otro" value="Otro">
+        <label for="otro">Otro</label><br>
+
+        <p>Intereses</p>
+        <input type="checkbox" name="Intereses" id="musica" value="Musica">
+        <label for="musica">Musica</label>
+
+        <input type="checkbox" name="Intereses" id="deporte" value="Deporte">
+        <label for="deporte">Deporte</label>
+
+        <input type="checkbox" name="Intereses" id="lectura" value="Lectura">
+        <label for="lectura">Lectura</label>
+
+    </fieldset>
+    <fieldset>
+        Mensaje
+        <legend>Mensaje</legend>
+        <label for="mensaje">Mensaje</label><br>
+        <textarea name="mensaje" id="mensaje" rows="4" cols="40"
+            placeholder="Escriba su mensaje aquí..."></textarea>
+        
+    </fieldset>
+
+    <fieldset>
+        País
+        <legend>País</legend>
+        <select name="pais" id="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+        </select>
+    </fieldset>
+    <button type="submit">Enviar</button>
+</form>
+</html>
