@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiTienda</title>
+  <!-- Aquí conectas tu archivo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+  <div class="container site-header__container">
+    <a href="#top" class="site-header__logo" aria-label="Inicio">
+      <span class="site-header__mark" aria-hidden="true">M</span>
+      <span>MiTienda</span>
+    </a>
+    
+    <nav class="site-header__nav">
+      <a href="#novedades">Novedades</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="site-header__menu-btn" aria-label="Abrir menú">
+      <span class="menu-icon"></span>
+    </button>
+  </div>
+</header>
+
+<section class="panel">
+  <h2>1) Sistema de Botones</h2>
+  <p class="code-note">Base + variantes. Observa padding, radio, foco, hover/active. Usa Flex para el grupo.</p>
+  
+  <div class="btn-group">
+    <button class="btn btn--primary">Primario</button>
+    <button class="btn btn--secondary">Secundario</button>
+    <button class="btn btn--outline">Outline</button>
+    <button class="btn btn--danger">Peligro</button>
+    <button class="btn btn--primary btn--icon">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.098zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
+      Con icono
+    </button>
+    <button class="btn btn--primary" disabled>Deshabilitado</button>
+  </div>
+</section>
+
+<article class="product-card">
+  <div class="product-card__media">
+    <span class="product-card__badge">Nuevo</span>
+    <img src="zapatillas.webp" alt="Zapatillas Runner Pro" class="product-card__img">
+  </div>
+  
+  <div class="product-card__info">
+    <h3 class="product-card__title">Zapatillas Runner Pro</h3>
+    <p class="product-card__desc">Amortiguación ligera, malla respirable y suela antideslizante. Perfectas para entrenar todos los días.</p>
+    
+    <div class="product-card__pricing">
+      <span class="product-card__price">$ 24.999</span>
+      <span class="product-card__old-price">$ 29.999</span>
+    </div>
+    
+    <div class="btn-group">
+      <button class="btn btn--primary">Comprar ahora</button>
+      <button class="btn btn--outline btn--icon">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+        Añadir
+      </button>
+    </div>
+  </div>
+</article>
+
+<main class="container">
+  <section id="novedades" class="panel">
+    <h2>Novedades</h2>
+    <p class="code-note">Sección de relleno para probar el menú.</p>
+  </section>
+
+  <section id="ofertas" class="panel">
+    <h2>Ofertas</h2>
+    <p class="code-note">Otra sección de relleno.</p>
+  </section>
+
+  <section id="contacto" class="panel">
+    <h2>Contacto</h2>
+    <p class="code-note">Más contenido de ejemplo.</p>
+  </section>
+</main>
+</body>
+</html>
