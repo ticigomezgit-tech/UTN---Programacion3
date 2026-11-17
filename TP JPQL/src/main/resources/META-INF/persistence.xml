@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="FacturacionPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>com.tp.facturacion.entities.Usuario</class>
+        <class>com.tp.facturacion.entities.PuntoVenta</class>
+        <class>com.tp.facturacion.entities.TipoMoneda</class>
+        <class>com.tp.facturacion.entities.CondicionIva</class>
+        <class>com.tp.facturacion.entities.Contacto</class>
+        <class>com.tp.facturacion.entities.Domicilio</class>
+        <class>com.tp.facturacion.entities.Cliente</class>
+        <class>com.tp.facturacion.entities.Rubro</class>
+        <class>com.tp.facturacion.entities.Marca</class>
+        <class>com.tp.facturacion.entities.Articulo</class>
+        <class>com.tp.facturacion.entities.ListaPrecio</class>
+        <class>com.tp.facturacion.entities.ListaPrecioArticulo</class>
+        <class>com.tp.facturacion.entities.FacturaVenta</class>
+        <class>com.tp.facturacion.entities.FacturaVentaDetalle</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/facturacion"/>
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.password" value="postgres"/>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
